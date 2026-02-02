@@ -39,3 +39,23 @@
 
 # debug information files
 *.dwo
+
+# CMake generated files
+build/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+CMakeUserPresets.json
+
+# ignoring pulled in eigen package
+eigen*
+CMakeFiles/*
+build/*
+*/CMakeFiles/*
