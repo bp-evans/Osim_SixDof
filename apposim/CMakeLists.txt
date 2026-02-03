@@ -1,5 +1,5 @@
 
-add_executable(apposim src/sim_main.cc)
+add_executable(apposim src/sim_main.cc src/rk4_integ.cc)
 
 target_include_directories(apposim 
     PUBLIC 
