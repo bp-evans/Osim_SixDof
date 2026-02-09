@@ -20,19 +20,21 @@ class RigidBody
 
         Eigen::Vector3d getVelocity() { return _velocity; }
 
-        Eigen::Vector3d getEciPos() { return _eciPos; }
+        Eigen::Vector3d getPos() { return _pos; }
 
-        void updateState(double inMass, Eigen::Vector3d inVel, Eigen::Vector3d inEciPos);
+        void updateState(double inMass, Eigen::Vector3d inVel, Eigen::Vector3d inPos);
 
         void activateBody();
 
         void deactivateBody();
+
+        std::string getName() { return _objName; }
         
     private:
         // Core member variables
         double _mass;
         Eigen::Vector3d _velocity;
-        Eigen::Vector3d _eciPos;
+        Eigen::Vector3d _pos;
         bool isActive;
         std::string _objName;
 };

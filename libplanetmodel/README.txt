@@ -1,0 +1,2 @@
+The libplanetmodel library will contain the code for the planet model object. Planet models are the basic class for any celestial bodies
+that will eventually exist in the sim. For now, it is a simple point source.

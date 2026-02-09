@@ -16,7 +16,7 @@ RigidBody::RigidBody(double mass, Eigen::Vector3d velocity, Eigen::Vector3d eciP
 {
     _mass = mass;
     _velocity = velocity;
-    _eciPos = eciPos;
+    _pos = eciPos;
     isActive = false;
     _objName = objName;
 }
@@ -31,12 +31,12 @@ void RigidBody::deactivateBody()
     isActive = false;
 }
 
-void RigidBody::updateState(double inMass, Eigen::Vector3d inVel, Eigen::Vector3d inEciPos)
+void RigidBody::updateState(double inMass, Eigen::Vector3d inVel, Eigen::Vector3d inPos)
 {
     _mass = inMass;
     for (int i = 0;i < V3_SIZE;i++)
     {
         _velocity(i) = inVel(i);
-        _eciPos(i) = inEciPos(i);
+        _pos(i) = inPos(i);
     }
 }

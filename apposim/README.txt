@@ -1,0 +1,1 @@
+The apposim is the main application for the six dof simulator. This contains any simulation code as well as the main executable.

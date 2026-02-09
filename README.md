@@ -1,1 +1,2 @@
 # Osim_SixDof
+This project is aiming to be a sixdof orbital mechanics simulator written in mainly c++. For now, this will consist of a basic orbit simulator using point body gravity sources for planets.
